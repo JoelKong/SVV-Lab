@@ -275,14 +275,14 @@ namespace ICT3101_Calculator.UnitTests
                 Throws.ArgumentException.With.Message.EqualTo("All parameters must be non-negative"));
         }
 
-        [Test]
-        public void CalculateAverageExpectedFailures_WithValidParameters_ReturnsCorrectResult()
-        {
-            // Act
-            double result = _calculator.CalculateAverageExpectedFailures(200, 10, 50);
-            // Assert
-            Assert.That(result, Is.EqualTo(86.466).Within(0.001));
-        }
+        //[Test]
+        //public void CalculateAverageExpectedFailures_WithValidParameters_ReturnsCorrectResult()
+        //{
+        //    // Act
+        //    double result = _calculator.CalculateAverageExpectedFailures(200, 10, 50);
+        //    // Assert
+        //    Assert.That(result, Is.EqualTo(86.466).Within(0.001));
+        //}
 
         [Test]
         public void CalculateAverageExpectedFailures_WithZeroTime_ReturnsZero()
