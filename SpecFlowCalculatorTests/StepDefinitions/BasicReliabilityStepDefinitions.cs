@@ -27,7 +27,7 @@ namespace SpecFlowCalculatorTests.StepDefinitions
                 _context.Exception = ex;
             }
         }
-
+//test
         [When(@"I have entered (.*) and (.*) and (.*) into the calculator and press average expected failures")]
         public void WhenIHaveEnteredThreeValuesAndPressAverageExpectedFailures(double totalFailures, double initialFailureIntensity, double executionTime)
         {
