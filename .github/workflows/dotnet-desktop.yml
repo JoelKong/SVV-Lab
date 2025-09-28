@@ -75,12 +75,10 @@ jobs:
       run: dotnet build ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --no-restore
 
     - name: NUnit Tests
-      working-directory: ICT3101_Calculator.UnitTests/
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test ICT3101_Calculator.UnitTests/ICT3101_Calculator.UnitTests.csproj --configuration ${{ matrix.configuration }} --verbosity normal
 
     - name: SpecFlow Tests
-      working-directory: SpecFlowCalculatorTests/
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test SpecFlowCalculatorTests/SpecFlowCalculatorTests.csproj --configuration ${{ matrix.configuration }} --verbosity normal
 
     # The web-app / signing packaging steps have been removed from this workflow because
     # this repository does not produce a Windows Application Packaging project.
