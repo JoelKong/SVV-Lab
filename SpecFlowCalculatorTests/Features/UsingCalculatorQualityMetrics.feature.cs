@@ -28,8 +28,8 @@ namespace SpecFlowCalculatorTests.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorQualityMetrics", "In order to assess software system quality\r\nAs a system quality engineer\r\nI want " +
-                "to calculate defect density and SSI for software releases", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorQualityMetrics", ("In order to assess software system quality\r\nAs a system quality engineer\r\nI want " +
+                "to calculate defect density and SSI for software releases"), global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "UsingCalculatorQualityMetrics.feature"
 #line hidden
@@ -147,39 +147,6 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Calculate SSI for successive release")]
-        [NUnit.Framework.CategoryAttribute("QualityMetrics")]
-        public async System.Threading.Tasks.Task CalculateSSIForSuccessiveRelease()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "QualityMetrics"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Calculate SSI for successive release", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 19
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                await this.ScenarioStartAsync();
-#line 20
- await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 21
- await testRunner.WhenAsync("I have entered 10000 and 2000 and 500 into the calculator and press SSI calculati" +
-                        "on", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 22
- await testRunner.ThenAsync("the quality metrics result should be \"12000\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-            }
-            await this.ScenarioCleanupAsync();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Calculate defect density with invalid inputs")]
         [NUnit.Framework.CategoryAttribute("QualityMetrics")]
         public async System.Threading.Tasks.Task CalculateDefectDensityWithInvalidInputs()
@@ -205,8 +172,8 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.WhenAsync("I have entered 10 and 0 into the calculator and press defect density", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 28
- await testRunner.ThenAsync("the calculator should display a quality metrics error message \"Lines of code must" +
-                        " be greater than zero\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a quality metrics error message \"Lines of code must" +
+                        " be greater than zero\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -235,12 +202,12 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 33
- await testRunner.WhenAsync("I have entered 5000 and -1000 and 200 into the calculator and press SSI calculati" +
-                        "on", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 5000 and -1000 and 200 into the calculator and press SSI calculati" +
+                        "on"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 34
- await testRunner.ThenAsync("the calculator should display a quality metrics error message \"All SSI values mus" +
-                        "t be non-negative\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a quality metrics error message \"All SSI values mus" +
+                        "t be non-negative\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

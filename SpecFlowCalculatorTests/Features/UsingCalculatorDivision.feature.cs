@@ -28,8 +28,8 @@ namespace SpecFlowCalculatorTests.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorDivision", "\tIn order to conquer divisions\r\n\tAs a division enthusiast\r\n\tI want to understand " +
-                "a variety of division operations", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorDivision", ("\tIn order to conquer divisions\r\n\tAs a division enthusiast\r\n\tI want to understand " +
+                "a variety of division operations"), global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "UsingCalculatorDivision.feature"
 #line hidden

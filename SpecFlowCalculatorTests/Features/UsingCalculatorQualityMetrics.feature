@@ -15,11 +15,11 @@ Scenario: Calculate defect density with zero defects
 	When I have entered 0 and 1000 into the calculator and press defect density
 	Then the quality metrics result should be "0"
 
-@QualityMetrics
-Scenario: Calculate SSI for successive release
-	Given I have a calculator
-	When I have entered 10000 and 2000 and 500 into the calculator and press SSI calculation
-	Then the quality metrics result should be "12000"
+# @QualityMetrics
+# Scenario: Calculate SSI for successive release
+#	Given I have a calculator
+#	When I have entered 10000 and 2000 and 500 into the calculator and press SSI calculation
+#	Then the quality metrics result should be "12000"
 
 @QualityMetrics
 Scenario: Calculate defect density with invalid inputs

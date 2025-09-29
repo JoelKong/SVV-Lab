@@ -179,6 +179,7 @@ namespace lab1
             if (totalFailures == 0)
                 return 0;
             
+            // The formula should be: μ(τ) = ν₀ * [1 - exp(-λ₀*τ/ν₀)]
             double exponent = -(initialFailureIntensity * executionTime) / totalFailures;
             return totalFailures * (1 - Math.Exp(exponent));
         }
@@ -197,7 +198,8 @@ namespace lab1
             if (numberOfDefects < 0)
                 throw new ArgumentException("Number of defects cannot be negative");
             
-            return (numberOfDefects / linesOfCode) * 1000;
+            // Defect density should be defects per line of code
+            return numberOfDefects / linesOfCode;
         }
 
         /// <summary>

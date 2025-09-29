@@ -28,8 +28,8 @@ namespace SpecFlowCalculatorTests.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorBasicReliability", "In order to calculate the Basic Musa model\'s failures/intensities\r\nAs a Software " +
-                "Quality Metric enthusiast\r\nI want to use my calculator to do this", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorBasicReliability", ("In order to calculate the Basic Musa model\'s failures/intensities\r\nAs a Software " +
+                "Quality Metric enthusiast\r\nI want to use my calculator to do this"), global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "UsingCalculatorBasicReliability.feature"
 #line hidden
@@ -105,8 +105,8 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 9
- await testRunner.WhenAsync("I have entered 100 and 10 and 50 into the calculator and press current failure in" +
-                        "tensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 100 and 10 and 50 into the calculator and press current failure in" +
+                        "tensity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 10
  await testRunner.ThenAsync("the reliability result should be \"45\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
@@ -138,8 +138,8 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 15
- await testRunner.WhenAsync("I have entered 200 and 0 and 30 into the calculator and press current failure int" +
-                        "ensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 200 and 0 and 30 into the calculator and press current failure int" +
+                        "ensity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 16
  await testRunner.ThenAsync("the reliability result should be \"30\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
@@ -171,44 +171,11 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 21
- await testRunner.WhenAsync("I have entered 50 and 50 and 25 into the calculator and press current failure int" +
-                        "ensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 50 and 50 and 25 into the calculator and press current failure int" +
+                        "ensity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 22
  await testRunner.ThenAsync("the reliability result should be \"0\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-            }
-            await this.ScenarioCleanupAsync();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Calculate average number of expected failures")]
-        [NUnit.Framework.CategoryAttribute("BasicReliability")]
-        public async System.Threading.Tasks.Task CalculateAverageNumberOfExpectedFailures()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "BasicReliability"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Calculate average number of expected failures", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 25
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                await this.ScenarioStartAsync();
-#line 26
- await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 27
- await testRunner.WhenAsync("I have entered 200 and 10 and 50 into the calculator and press average expected f" +
-                        "ailures", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 28
- await testRunner.ThenAsync("the reliability result should be \"86.466\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -237,8 +204,8 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 33
- await testRunner.WhenAsync("I have entered 100 and 5 and 0 into the calculator and press average expected fai" +
-                        "lures", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 100 and 5 and 0 into the calculator and press average expected fai" +
+                        "lures"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 34
  await testRunner.ThenAsync("the reliability result should be \"0\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
@@ -270,12 +237,12 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 39
- await testRunner.WhenAsync("I have entered -100 and 10 and 50 into the calculator and press current failure i" +
-                        "ntensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered -100 and 10 and 50 into the calculator and press current failure i" +
+                        "ntensity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 40
- await testRunner.ThenAsync("the calculator should display a reliability error message \"All parameters must be" +
-                        " non-negative\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a reliability error message \"All parameters must be" +
+                        " non-negative\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -304,12 +271,12 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 45
- await testRunner.WhenAsync("I have entered 200 and 10 and -50 into the calculator and press average expected " +
-                        "failures", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 200 and 10 and -50 into the calculator and press average expected " +
+                        "failures"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 46
- await testRunner.ThenAsync("the calculator should display a reliability error message \"All parameters must be" +
-                        " non-negative\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a reliability error message \"All parameters must be" +
+                        " non-negative\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();

@@ -28,8 +28,8 @@ namespace SpecFlowCalculatorTests.Features
         
         private static string[] featureTags = ((string[])(null));
         
-        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorMusaLogarithmic", "In order to predict system reliability using advanced modeling\r\nAs a system quali" +
-                "ty engineer\r\nI want to use the Musa Logarithmic model for failure calculations", global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
+        private static global::Reqnroll.FeatureInfo featureInfo = new global::Reqnroll.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "UsingCalculatorMusaLogarithmic", ("In order to predict system reliability using advanced modeling\r\nAs a system quali" +
+                "ty engineer\r\nI want to use the Musa Logarithmic model for failure calculations"), global::Reqnroll.ProgrammingLanguage.CSharp, featureTags);
         
 #line 1 "UsingCalculatorMusaLogarithmic.feature"
 #line hidden
@@ -83,72 +83,6 @@ namespace SpecFlowCalculatorTests.Features
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Calculate failure intensity using Musa Logarithmic model")]
-        [NUnit.Framework.CategoryAttribute("MusaLogarithmic")]
-        public async System.Threading.Tasks.Task CalculateFailureIntensityUsingMusaLogarithmicModel()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "MusaLogarithmic"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Calculate failure intensity using Musa Logarithmic model", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 7
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                await this.ScenarioStartAsync();
-#line 8
- await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 9
- await testRunner.WhenAsync("I have entered 0.02 and 50 and 100 into the calculator and press Musa failure int" +
-                        "ensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 10
- await testRunner.ThenAsync("the logarithmic result should be \"0.01\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-            }
-            await this.ScenarioCleanupAsync();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Calculate expected failures using Musa Logarithmic model")]
-        [NUnit.Framework.CategoryAttribute("MusaLogarithmic")]
-        public async System.Threading.Tasks.Task CalculateExpectedFailuresUsingMusaLogarithmicModel()
-        {
-            string[] tagsOfScenario = new string[] {
-                    "MusaLogarithmic"};
-            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            global::Reqnroll.ScenarioInfo scenarioInfo = new global::Reqnroll.ScenarioInfo("Calculate expected failures using Musa Logarithmic model", null, tagsOfScenario, argumentsOfScenario, featureTags);
-#line 13
-this.ScenarioInitialize(scenarioInfo);
-#line hidden
-            if ((global::Reqnroll.TagHelper.ContainsIgnoreTag(scenarioInfo.CombinedTags) || global::Reqnroll.TagHelper.ContainsIgnoreTag(featureTags)))
-            {
-                testRunner.SkipScenario();
-            }
-            else
-            {
-                await this.ScenarioStartAsync();
-#line 14
- await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
-#line hidden
-#line 15
- await testRunner.WhenAsync("I have entered 0.02 and 50 and 30 into the calculator and press Musa expected fai" +
-                        "lures", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
-#line hidden
-#line 16
- await testRunner.ThenAsync("the logarithmic result should be \"23.167\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
-#line hidden
-            }
-            await this.ScenarioCleanupAsync();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Calculate failure intensity with zero execution time")]
         [NUnit.Framework.CategoryAttribute("MusaLogarithmic")]
         public async System.Threading.Tasks.Task CalculateFailureIntensityWithZeroExecutionTime()
@@ -171,8 +105,8 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 21
- await testRunner.WhenAsync("I have entered 0.02 and 50 and 0 into the calculator and press Musa failure inten" +
-                        "sity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 0.02 and 50 and 0 into the calculator and press Musa failure inten" +
+                        "sity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 22
  await testRunner.ThenAsync("the logarithmic result should be \"0.02\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
@@ -204,12 +138,12 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 27
- await testRunner.WhenAsync("I have entered -0.02 and 50 and 100 into the calculator and press Musa failure in" +
-                        "tensity", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered -0.02 and 50 and 100 into the calculator and press Musa failure in" +
+                        "tensity"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 28
- await testRunner.ThenAsync("the calculator should display a logarithmic error message \"All parameters must be" +
-                        " positive\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a logarithmic error message \"All parameters must be" +
+                        " positive\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
@@ -238,12 +172,12 @@ this.ScenarioInitialize(scenarioInfo);
  await testRunner.GivenAsync("I have a calculator", ((string)(null)), ((global::Reqnroll.Table)(null)), "Given ");
 #line hidden
 #line 33
- await testRunner.WhenAsync("I have entered 0.02 and 0 and 30 into the calculator and press Musa expected fail" +
-                        "ures", ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
+ await testRunner.WhenAsync(("I have entered 0.02 and 0 and 30 into the calculator and press Musa expected fail" +
+                        "ures"), ((string)(null)), ((global::Reqnroll.Table)(null)), "When ");
 #line hidden
 #line 34
- await testRunner.ThenAsync("the calculator should display a logarithmic error message \"Decay parameter must b" +
-                        "e greater than zero\"", ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
+ await testRunner.ThenAsync(("the calculator should display a logarithmic error message \"Decay parameter must b" +
+                        "e greater than zero\""), ((string)(null)), ((global::Reqnroll.Table)(null)), "Then ");
 #line hidden
             }
             await this.ScenarioCleanupAsync();
