@@ -7,6 +7,7 @@ class Program
         bool endApp = false;
         Calculator _calculator = new Calculator();
         // Display title as the C# console calculator app.
+        // This is a test change to trigger CI pipeline
         Console.WriteLine("Console Calculator in C#\r");
         Console.WriteLine("------------------------\n");
         while (!endApp)
